@@ -1,14 +1,9 @@
-[![Docker Build Status](https://img.shields.io/docker/build/oznu/guacamole.svg?label=x64%20build&style=for-the-badge)](https://hub.docker.com/r/oznu/guacamole/) [![Travis](https://img.shields.io/travis/oznu/docker-guacamole.svg?label=arm%20build&style=for-the-badge)](https://travis-ci.org/oznu/docker-guacamole) [![Docker Pulls](https://img.shields.io/docker/pulls/oznu/guacamole.svg?style=for-the-badge)](https://hub.docker.com/r/oznu/guacamole/)
+## 1 shot
+``` shell
+docker run -p 8080:8080 -v /tmp:/config oznu/guacamole
+```
 
-# Docker Guacamole
-
-A Docker Container for [Apache Guacamole](https://guacamole.apache.org/), a client-less remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH over HTML5.
-
-This image will run on most platforms that support Docker including Docker for Mac, Docker for Windows, Synology DSM and Raspberry Pi 3 boards.
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/esgaHNRxdhY/0.jpg)](http://www.youtube.com/watch?v=esgaHNRxdhY "Video Title")
-
-This container runs the guacamole web client, the guacd server and a postgres database.
+extensions are really useful for more security, ldap auth idk
 
 ## Usage
 
